@@ -4,25 +4,29 @@
     box-sizing: border-box;
 }
 .main{
-    /* display: flex; */
     width: 100%;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
     animation: bg-change 3000ms infinite;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top: 50px; */
-    padding-top: 100%;
-    padding-bottom: 50%;
+    background-attachment: fixed;
+    /* padding-top: 100%; */
+    /* padding-bottom: 50%; */
 }
 .app{
     text-align: center;
     color: white;
-    font-size: xx-large; 
+    font-size: 56px; 
+    padding-bottom: 50%;
+font-family: fantasy;
      /* padding-bottom: 80%;  */
 }
-  
+.app2{
+    text-align: center;
+    color: white;
+    font-size: 26px; 
+     /* padding-bottom: 80%;  */
+} 
 /* changing bg image */
 @keyframes bg-change {
     0% {
