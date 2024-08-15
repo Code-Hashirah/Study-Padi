@@ -22,8 +22,10 @@ function addCourse(e) {
         saveCourse(course);
         appendCourseToList(course);
         scheduleNotification(course);
+        window.alert("Added for studyS");
     } catch (error) {
         console.error("Error adding course:", error);
+        window.alert("Error adding course");
     }
 
     courseForm.reset();
