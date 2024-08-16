@@ -14,9 +14,14 @@
     background-size: cover;
     /* margin-top: 50px; */
     padding-top: 100%;
-    padding-bottom: 100%;
+    padding-bottom: 50%;
 }
-
+.app{
+    text-align: center;
+    color: white;
+    font-size: xx-large; 
+     /* padding-bottom: 80%;  */
+}
   
 /* changing bg image */
 @keyframes bg-change {
