@@ -1,0 +1,98 @@
+.circles{
+    width: 40%;
+    /* max-width:50%; */
+    border: 1px solid transparent;
+    /* width: 200px; */
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#blue{
+    background-color: blue;
+    animation: glowing2 4000ms infinite;
+      
+}
+
+#yellow{
+    background-color: yellow;
+    animation: glowing3 4000ms infinite;
+}
+
+#red{
+    background-color: red;
+    animation: glowing1 4000ms infinite;
+}
+
+#green{
+    background-color: green;
+    animation: glowing 4000ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+      background-color: green;
+      box-shadow: 0 0 3px  green;
+      /* visibility: hidden; */
+      display: none;
+    }
+    50% {
+      background-color: green;
+      box-shadow: 0 0 10px blue;
+    }
+    100% {
+      background-color: blue;
+      box-shadow: 0 0 3px blue;
+    }
+  }
+
+  @keyframes glowing1 {
+    0% {
+      background-color: red;
+      box-shadow: 0 0 3px  red;
+    }
+    50% {
+      background-color: red;
+      box-shadow: 0 0 10px green;
+      /* display: none; */
+      visibility: hidden;
+    }
+    100% {
+      background-color: green;
+      box-shadow: 0 0 3px green;
+      /* visibility: hidden; */ 
+    }
+  }
+
+  @keyframes glowing2 {
+    0% {
+      background-color: blue;
+      box-shadow: 0 0 3px  blue;
+    }
+    50% {
+      background-color: blue;
+      box-shadow: 0 0 10px yellow;
+    visibility: hidden;
+    }
+    100% {
+      background-color: yellow;
+      box-shadow: 0 0 3px yellow;
+    }
+  }
+ 
+
+  @keyframes glowing3 {
+    0% {
+      background-color: yellow;
+      box-shadow: 0 0 3px  yellow;
+    }
+    50% {
+      background-color: yellow;
+      box-shadow: 0 0 10px red;
+    visibility: hidden;
+    }
+    100% {
+      background-color: red;
+      box-shadow: 0 0 3px red;
+    }
+  }

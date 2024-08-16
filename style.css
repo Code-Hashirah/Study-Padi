@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    /* display: flex; */
+    width: 100%;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    animation: bg-change 3000ms infinite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 50px; */
+    padding-top: 100%;
+    padding-bottom: 100%;
+}
+
+  
+/* changing bg image */
+@keyframes bg-change {
+    0% {
+      background-image: url('assets/pic1.jpg');
+    }
+     25%{
+        background-image: url('assets/pic2.jpg');
+        background-color: white;
+     }
+
+     50%{
+        background-image: url('assets/pic1.jpg');
+     }
+    100% {
+        background-image: url('assets/pic1.jpg');
+    }
+  }
+
+/* ******************************************************************************** */
+@media only screen and (max-width:619px) {
+    .main{
+        width: 100%;
+    }
+}
