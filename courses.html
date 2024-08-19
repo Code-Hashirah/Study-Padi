@@ -7,17 +7,27 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="bootstrap.min.css">
+<style>
+    body{
+        background-image: url('assets/pic2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+}
+</style>
 </head>
-<body>
-    <div class="container">
-        <h1 class="text-center my-4">Manage Courses</h1>
+<body class="">
+    <div class="container bg-dark">
+        <h1 class="text-center my-4 text-secondary">Manage Plans</h1>
 
         <!-- Manage Courses Section -->
         <ul id="manage-course-list" class="list-group"></ul>
+        <button class="bg-primary p-2 text-centerms-5 ms-5 mt-5 mt-5" onclick="home()"><i class="fas fa-house text-light"></i></button>
     </div>
 
     <!-- JavaScript -->
     <script src="manage.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

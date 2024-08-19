@@ -10,16 +10,16 @@
     <title>Document</title>
 </head>
 <body class="bg-dark">
-    <h1 class="text-center text-primary" >Study Planner App</h1>
+    <h1 class="text-center text-white" >Study Planner App</h1>
     <main class="frame">
 
-        <button class="circles" onclick="add()" >Add + Study</button>
+        <button class="circles bg-primary text-white" onclick="add()" >Add Study + <span class="fas fa-book"></span></button>
     
-        <button class="circles" onclick="manageCourses()">Manage my Plans</button>
+        <button class="circles bg-info text-white" onclick="manageCourses()">Manage my Plans <span class="fas fa-tools"></span></button>
         
-        <button class="circles" onclick="viewCourses()">View Plans</button>
+        <button class="circles bg-warning text-white" onclick="viewCourses()">View Plans <span class="fas fa-eye"></span></button>
        
-        <button class="circles" onclick=""></button>
+        <button class="circles bg-danger text-white" onclick="exit()">Exit <span class="fas fa-close"></span></button>
     </main>
     <script src="bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
