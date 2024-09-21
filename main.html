@@ -7,22 +7,44 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <title>Document</title>
+    <title>Study Planner</title>
 </head>
 <body class="bg-dark">
-    <h1 class="text-center text-white" >Study Planner App</h1>
-    <main class="frame">
-
-        <button class="circles bg-primary text-white" onclick="add()" >Add Study + <span class="fas fa-book"></span></button>
+    <h1 class="text-center text-white">Study Planner App</h1>
     
-        <button class="circles bg-info text-white" onclick="manageCourses()">Manage my Plans <span class="fas fa-tools"></span></button>
-        
-        <button class="circles bg-warning text-white" onclick="viewCourses()">View Plans <span class="fas fa-eye"></span></button>
-       
-        <button class="circles bg-danger text-white" onclick="exit()">Exit <span class="fas fa-close"></span></button>
+    <!-- Main Menu -->
+    <main id="main-menu" class="frame">
+        <button class="circles bg-primary text-white" onclick="showAddForm()">Add Study + <span class="fas fa-book"></span></button>
+        <button class="circles bg-info text-white" onclick="showManageCourses()">Manage my Plans <span class="fas fa-tools"></span></button>
+        <button class="circles bg-warning text-white" onclick="showViewCourses()">View Plans <span class="fas fa-eye"></span></button>
+        <button class="circles bg-danger text-white" onclick="exitApp()">Exit <span class="fas fa-close"></span></button>
     </main>
+
+    <!-- Add Study Form -->
+    <div id="add-study-section" class="hide">
+        <h2 class="text-center text-white">Add Study</h2>
+        <form id="course-form">
+            <input type="text" id="course-name" placeholder="Course Name" required>
+            <input type="time" id="study-time" placeholder="Study Time" required>
+            <button type="submit" class="btn btn-success">Add Course</button>
+        </form>
+    </div>
+
+    <!-- Manage Courses Section -->
+    <div id="manage-courses-section" class="hide">
+        <h2 class="text-center text-white">Manage Courses</h2>
+        <ul id="manage-course-list" class="list-group"></ul>
+        <button id="download-json" class="btn btn-warning">Download Courses</button>
+    </div>
+
+    <!-- View Courses Section -->
+    <div id="view-courses-section" class="hide">
+        <h2 class="text-center text-white">Course List</h2>
+        <ul id="course-list" class="list-group"></ul>
+    </div>
+
+    <!-- Scripts -->
     <script src="bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="app.js.js"></script>
+    <script src="app2.js"></script>
 </body>
 </html>
