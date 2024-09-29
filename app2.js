@@ -115,33 +115,46 @@ function downloadJsonFile() {
 
 
 
-
 function showAddForm() {
     document.getElementById('main-menu').classList.add('hide');
-    document.getElementById('add-study-section').classList.remove('hide');
+    const addStudySection = document.getElementById('add-study-section');
+    addStudySection.classList.remove('hide');
     document.getElementById('manage-courses-section').classList.add('hide');
     document.getElementById('view-courses-section').classList.add('hide');
+
+    // Scroll to the form
+    addStudySection.scrollIntoView({ behavior: 'smooth' });
 }
 
 function showManageCourses() {
     document.getElementById('main-menu').classList.add('hide');
-    document.getElementById('manage-courses-section').classList.remove('hide');
+    const manageCoursesSection = document.getElementById('manage-courses-section');
+    manageCoursesSection.classList.remove('hide');
     document.getElementById('add-study-section').classList.add('hide');
     document.getElementById('view-courses-section').classList.add('hide');
 
     // Load courses from localStorage and display in the manage section
     loadCoursesForManagement();
+
+    // Scroll to the manage courses section
+    manageCoursesSection.scrollIntoView({ behavior: 'smooth' });
 }
 
 function showViewCourses() {
     document.getElementById('main-menu').classList.add('hide');
-    document.getElementById('view-courses-section').classList.remove('hide');
+    const viewCoursesSection = document.getElementById('view-courses-section');
+    viewCoursesSection.classList.remove('hide');
     document.getElementById('add-study-section').classList.add('hide');
     document.getElementById('manage-courses-section').classList.add('hide');
 
     // Load and display the courses in the course list
     loadCoursesForView();
+
+    // Scroll to the view courses section
+    viewCoursesSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+
 
 function exitApp() {
     if (typeof navigator.app !== 'undefined') {
